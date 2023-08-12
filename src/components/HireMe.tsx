@@ -1,5 +1,8 @@
+"use client"
 import Link from 'next/link';
 import React, { SVGProps } from 'react'
+import { motion } from 'framer-motion';
+const MotionLInk = motion(Link)
 interface CircularTextProps extends SVGProps<SVGSVGElement> {
     className?: string;
 }
@@ -28,7 +31,8 @@ const HireMe: React.FC<HireMeProps> = ({ className }) => {
         }>
             <div className='w-40 h-auto flex items-center justify-center relative' >
                 <CircularText className={"fill-dark animate-spin-slow "} />
-                <Link href={"mailto:vr7roshni@gmail.com"} className='flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-black text-white sjadow-md border border-solid border-dark w-20 h-20 rounded-full font-semibold hover:bg-white hover:text-black'>Hire Me</Link>
+                <MotionLInk href={"mailto:vr7roshni@gmail.com"} className='flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-black text-white sjadow-md border border-solid border-dark w-20 h-20 rounded-full font-semibold hover:bg-white '
+                    whileHover={{ backgroundColor: ["#121212", "rgba(131,58,180,1)", "rgba(253,29,29,1)", "rgba(252,176,69,1)", "rgba(131,58,180,1)", "#121212"] }}>Hire Me</MotionLInk>
             </div >
         </div >
     )

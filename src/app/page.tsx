@@ -25,7 +25,7 @@ export default function Home() {
           </div>
           <div className="w-full mt-0 md:mt-4 md:w-1/2 flex flex-col items-center md:items-start self-center md:self-start px-4 md:px-0">
             <AnimatedTxt text='Turning Vision into Reality with code and Design' className='!text-4xl md:!text-6xl !text-center md:!text-left' />
-            <p className='my-4 text-base md:text-lg font-medium'>
+            <p className='my-4 text-base md:text-lg md:text-left font-medium'>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, aut tempore iste magnam sed eveniet non eum mollitia excepturi dolor! Obcaecati, facere hic impedit nihil atque placeat ducimus cumque vel.
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, aut tempore iste magnam sed eveniet non eum mollitia excepturi dolor! Obcaecati, facere hic impedit nihil atque placeat ducimus cumque vel.
             </p>

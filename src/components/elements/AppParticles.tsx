@@ -1,17 +1,24 @@
 'use client'
-import React, { useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import { Engine } from 'tsparticles-engine';
 
-function AppParticles() {
+interface AppParticlesProps {
+    skills?: boolean;
+}
+
+const AppParticles: React.FC<AppParticlesProps> = ({ skills}) => {
+
     const particlesInit = useCallback(async (engine: Engine) => {
         await loadFull(engine);
     }, []);
 
     const particlesLoaded = useCallback(async () => { }, []);
     return (
-        <Particles
+        <>
+        {
+            !skills ? <Particles
             className='w-full h-full translate-z-0 absolute inset-0 z-0'
             id='tsparticles'
             init={particlesInit}
@@ -99,7 +106,10 @@ function AppParticles() {
                 detectRetina: true
             }}
 
-        />
+        /> :null
+   
+}
+</>
     )
 }
 

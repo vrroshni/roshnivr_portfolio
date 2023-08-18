@@ -26,7 +26,7 @@ const Projects = () => {
   return (
     <main id="projects" className=' relative flex w-full flex-col items-center justify-center scroll-mt-28 min-h-screen'>
       <div className='inline-block z-0 p-8 md:px-28  pt-0 w-full' >
-        <AnimatedTxt text='Projects done by me' className='lg:text-6xl text-5xl !text-center mb-3 ' />
+        <AnimatedTxt text='Projects done by me' className='lg:text-5xl text-4xl !text-center mb-9' />
       </div>
       <div className="overflow-x-auto scroll-hide w-full max-w-screen-sm mx-auto my-6 flex justify-between items-center gap-2 md:gap-3 bg-white dark:bg-grey-800 p-2 rounded-md">
         {categories.map((c: string = "", i: number) => (

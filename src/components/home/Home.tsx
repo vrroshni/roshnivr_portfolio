@@ -11,7 +11,7 @@ import AppParticles from '../elements/AppParticles';
 
 const Home = () => {
   return (
-    <main className=' relative flex items-center text-dark w-full h-auto md:pt-4'>
+    <main id='home' className=' relative flex items-center text-dark w-full h-auto md:pt-4'>
      {/* <AppParticles/> */}
       <div className="inline-block z-0 bg-light p-8 md:p-4 pt-0 w-full">
 
@@ -26,7 +26,7 @@ const Home = () => {
               alt="Picture of the author" />
           </div>
           <div className="w-full mt-0 md:mt-4 md:w-1/2 flex flex-col items-center md:items-start self-center md:self-start px-4 md:px-0">
-            <AnimatedTxt text='Turning Vision into Reality with code and Design' className='!text-4xl md:!text-6xl !text-center md:!text-left' />
+            <AnimatedTxt text='Turning Vision into Reality with code and Design' className='!text-4xl md:!text-6xl !text-center md:!text-left font-bold' />
             {/* <div className="flex flex-row items-start md:items-center gap-1.5">
               <h2 className="text-lg md:text-2xl">I am into</h2>
               <span className="text-fuchsia-700 dark:text-fuchsia-600 text-lg md:text-2xl font-medium">Backend Development</span>

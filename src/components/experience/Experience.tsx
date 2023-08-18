@@ -13,9 +13,9 @@ import AnimatedTxt from '../elements/AnimatedTxt'
 export default function Experience() {
     const theme = 'light'
     return (
-        <main className=' relative flex w-full flex-col items-center justify-center'>
+        <main id="experience" className=' relative flex w-full flex-col items-center justify-center'>
             <div className='inline-block z-0 p-8 md:px-28  pt-0 w-full' >
-                <AnimatedTxt text='My Experiences' className='lg:text-6xl text-5xl !text-center mb-9 ' />
+                <AnimatedTxt text='My Experiences' className='lg:text-5xl text-4xl !text-center mb-9   ' />
                 <VerticalTimeline lineColor="">
                     {experiencesData.map((item, index) => (
                         <React.Fragment key={index}>

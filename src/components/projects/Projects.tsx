@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import AnimatedTxt from '../elements/AnimatedTxt'
-import { projectsData } from '@/lib/data'
+import { projectsData } from '@/app/lib/data'
 import Project from './Project'
 import { useEffect, useState } from "react";
 import { Link } from 'react-scroll';
@@ -26,7 +26,7 @@ const Projects = () => {
   }, [])
 
   return (
-    <main id="projects" className=' relative flex w-full flex-col items-center justify-center scroll-mt-28 min-h-screen'>
+    <main  id="projects" className=' relative flex w-full flex-col items-center justify-center scroll-mt-28 min-h-screen'>
       <div className='inline-block z-0 p-8 md:px-28  pt-0 w-full' >
         <AnimatedTxt text='Projects done by me' className='lg:text-5xl text-4xl !text-center mb-4' />
         {/* <AnimatedTxt text={category} className='text-3xl  !text-center mb-2' /> */}

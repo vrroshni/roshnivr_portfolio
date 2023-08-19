@@ -6,14 +6,15 @@ import {
     VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { experiencesData } from "../../lib/data";
+import { experiencesData } from "../../app/lib/data";
 import AnimatedTxt from '../elements/AnimatedTxt'
 
 
 export default function Experience() {
+
     const theme = 'light'
     return (
-        <main id="experience" className=' relative flex w-full flex-col items-center justify-center'>
+        <main  id="experience" className=' relative flex w-full flex-col items-center justify-center scroll-mt-28'>
             <div className='inline-block z-0 p-8 md:px-28  pt-0 w-full' >
                 <AnimatedTxt text='My Experiences' className='lg:text-5xl text-4xl !text-center mb-9   ' />
                 <VerticalTimeline lineColor="">

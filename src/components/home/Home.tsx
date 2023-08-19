@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { BsFillArrowDownCircleFill, BsLinkedin } from 'react-icons/bs';
 import { MdAttachEmail } from 'react-icons/md';
@@ -11,16 +12,14 @@ import AppParticles from '../elements/AppParticles';
 
 const Home = () => {
   return (
-    <main id='home' className=' relative flex items-center text-dark w-full h-auto md:pt-4'>
-     {/* <AppParticles/> */}
+    <main id='home' className=' relative flex items-center text-dark w-full h-auto md:pt-4 scroll-mt-28'>
+            
+            <AppParticles/>
       <div className="inline-block z-0 bg-light p-8 md:p-4 pt-0 w-full">
-
         <div className='flex flex-col md:flex-row items-center justify-between w-full'>
 
           <div className="w-full md:w-1/2 flex items-center justify-center">
             <Image src={ProfilePic}
-              // width={700}
-              // height={700}
               quality={100}
               priority={true}
               alt="Picture of the author" />

@@ -5,9 +5,9 @@ import AnimatedNumber from '../elements/AnimatedNumber'
 
 const About = () => {
   return (
-    <main id="about" className=' relative flex w-full flex-col items-center justify-center'>
+    <main  id="about" className=' relative flex w-full flex-col items-center justify-center'>
     <div className='inline-block z-0 p-8 md:px-28  pt-0 w-full' >
-        <AnimatedTxt text='Know more about me' className='lg:text-5xl text-4xl !text-center mb-9  ' />
+        <AnimatedTxt  text='Know more about me' className='lg:text-5xl text-4xl !text-center mb-9  ' />
         <div className=' w-full  gap-16 flex flex-col'>
             <div className='flex flex-col items-center justify-center md:px-10 '>
                 {/* <h3 className='mb-4 text-xl font-bold uppercase text-black/75'>

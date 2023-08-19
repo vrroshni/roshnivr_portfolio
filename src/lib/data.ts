@@ -67,7 +67,7 @@ export const projectsData = [
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    imageUrl: wordanalyticsImg,
     links: {
       "code": "https://github.com/Amaljith64/HMS",
       "video": "https://www.linkedin.com/posts/amaljith64_django-postgres-nginx-activity-6986915812557152256-m6YW/",
@@ -80,7 +80,7 @@ export const projectsData = [
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    imageUrl: wordanalyticsImg,
     links: {
       "code": "https://github.com/Amaljith64/HMS",
       "video": "https://www.linkedin.com/posts/amaljith64_django-postgres-nginx-activity-6986915812557152256-m6YW/",

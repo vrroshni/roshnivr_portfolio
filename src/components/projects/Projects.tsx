@@ -5,6 +5,8 @@ import { projectsData } from '@/lib/data'
 import Project from './Project'
 import { useEffect, useState } from "react";
 import { Link } from 'react-scroll';
+import MiniProject from './MiniProject'
+
 
 const Projects = () => {
   const categories = [...Array.from(new Set(projectsData.map((s) => s.category)))]
@@ -26,7 +28,8 @@ const Projects = () => {
   return (
     <main id="projects" className=' relative flex w-full flex-col items-center justify-center scroll-mt-28 min-h-screen'>
       <div className='inline-block z-0 p-8 md:px-28  pt-0 w-full' >
-        <AnimatedTxt text='Projects done by me' className='lg:text-5xl text-4xl !text-center mb-9' />
+        <AnimatedTxt text='Projects done by me' className='lg:text-5xl text-4xl !text-center mb-4' />
+        {/* <AnimatedTxt text={category} className='text-3xl  !text-center mb-2' /> */}
       </div>
       <div className="overflow-x-auto scroll-hide w-full max-w-screen-sm mx-auto my-6 flex justify-between items-center gap-2 md:gap-3 bg-white dark:bg-grey-800 p-2 rounded-md">
         {categories.map((c: string = "", i: number) => (
@@ -36,19 +39,29 @@ const Projects = () => {
         ))}
       </div>
       <div>
-
-
-        {filteredProjects.slice(0, viewAll ? filteredProjects.length : 6).map((project, index) => (
-          <React.Fragment key={index}>
-            <Project {...project} />
-          </React.Fragment>
-        ))}
+        {
+          filteredProjects[0].category == "Full Stack" ? filteredProjects.slice(0, viewAll ? filteredProjects.length : 6).map((project, index) => (
+            <React.Fragment key={index}>
+              <Project {...project} />
+            </React.Fragment>
+          )) :
+            <div className='grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  gap-8 px-12 sm:px-20 p-8 md:px-14 lg:px-28  pt-0 w-full' >
+              {filteredProjects.slice(0, viewAll ? filteredProjects.length : 6).map((project, index) => (
+                <React.Fragment key={index}>
+                  <MiniProject {...project} />
+                </React.Fragment>
+              ))}
+            </div>
+        }
       </div>
 
       {filteredProjects.length > 6
         &&
         <ViewAll scrollTo='projects' title={viewAll ? 'Okay, I got it' : 'View All'} handleClick={() => setViewAll(!viewAll)} />
       }
+
+
+
 
     </main >
   )
